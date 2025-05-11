@@ -41,4 +41,4 @@ To launch the Rosbridge WebSocket server, run the launch file included with the 
 $ ros2 launch rosbridge_server rosbridge_websocket_launch.xml \
    [INFO] [1541100534.152110]: Rosbridge WebSocket server started on port 9090
 ```
-Refresh your web page to reconnect to the robot, and verify that your alert compnent now shows "Connected" with green background:
+### Refresh your web page to reconnect to the robot, and verify that your alert compnent now shows "Connected" with green background.
