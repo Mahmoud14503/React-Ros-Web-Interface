@@ -12,21 +12,16 @@ class RobotState extends Component {
     }
     rosConnection() {
         this.state.ros = new ROSLIB.Ros({ url: 'ws://localhost:9090' });
-        
+
         this.state.ros.on('connection', () => {
-            // setConnectionStatus('successful');
-            // setConnection(true);
             console.log('connected successfully');
         });
 
         this.state.ros.on('error', (error) => {
-            // setConnectionStatus(`errored out (${error})`);
             console.log(`errored out: ${error}`);
         });
 
-        // When the Rosbridge server shuts down, fill the "status" span with "closed"
         this.state.ros.on('close', () => {
-            // setConnectionStatus('closed');
             console.log('connection closed');
         });
     }

@@ -24,7 +24,6 @@ class ConnectionStatus extends React.Component {
                 console.log(`errored out: ${error}`);
             });
     
-            // When the Rosbridge server shuts down, fill the "status" span with "closed"
             this.state.ros.on('close', () => {
                 this.setState({connected: false})
                 console.log('connection closed');

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Connection from './Connection';
 import Map from './Map';
 import RobotState from './RobotState';
+import JoyStick from './JoyStick';
+import StartButton from './StartButton';
 
 class Home extends Component {
     state = { };
@@ -12,6 +14,7 @@ class Home extends Component {
                 <Connection />
                 <Map />
                 <RobotState />
+                <JoyStick />
             </div>
         );
     }
